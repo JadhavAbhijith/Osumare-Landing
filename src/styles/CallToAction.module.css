@@ -1,0 +1,35 @@
+.callToAction {
+  padding: 0px 40px 40px 40px; 
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  overflow-x: auto;
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  min-width: 1000px;
+}
+
+.dataTable th,
+.dataTable td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.dataTable th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.noData {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}

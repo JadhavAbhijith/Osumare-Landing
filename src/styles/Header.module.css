@@ -1,0 +1,137 @@
+:root {
+  --primary-color: #f92549;
+  --secondary-color: #333C4D; 
+  --white: #FFFFFF;
+  --border-radius: 8px; 
+}
+
+.header {
+  background-color: var(--white);
+  padding: 20px 0; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); 
+}
+
+.container {
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 20px; 
+}
+
+.logo {
+  display: fixed; 
+  align-items: center;
+}
+
+.logoImage {
+  height: 60px; 
+  width: auto; 
+  display: block; 
+}
+
+.navbar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center; 
+}
+
+.navList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px; 
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--secondary-color); 
+  font-size: 1rem; 
+  font-weight: 500; 
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: var(--primary-color); 
+}
+
+.authButtons {
+  display: flex;
+  gap: 15px; 
+}
+
+.button {
+  padding: 10px 25px; 
+  border: none;
+  border-radius: var(--border-radius); 
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.loginButton {
+  background-color: var(--white);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color); 
+}
+
+.loginButton:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.signupButton {
+  background-color: var(--primary-color); 
+  color: var(--white);
+  border: 1px solid var(--primary-color);
+}
+
+.signupButton:hover {
+  background-color: #f92549; 
+  border-color: #f92549;
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column; 
+    gap: 20px;
+    padding: 0 15px; 
+  }
+
+  .navbar {
+    width: 100%;
+    justify-content:right; 
+  }
+
+  .navList {
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 25px; 
+  }
+
+  .authButtons {
+    width: 100%;
+    justify-content: center; 
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 5px 0;
+  }
+  .logoImage {
+    height: 35px; 
+  }
+  .navList {
+    gap: 30px;
+    font-size: 0.9rem;
+  }
+  .button {
+    padding: 8px 10px; 
+    font-size: 0.9rem;
+  }
+}

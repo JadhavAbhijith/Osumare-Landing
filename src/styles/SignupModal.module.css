@@ -1,0 +1,191 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out; 
+}
+
+.modalContent {
+  background-color: var(--white);
+  padding: 50px; 
+  border-radius: var(--border-radius);
+  max-width: 550px; 
+  width: 90%;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4); 
+  position: relative;
+  text-align: center;
+  animation: slideIn 0.3s ease-out; 
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px; 
+  right: 20px; 
+  background: none;
+  border: none;
+  font-size: 1.8rem; 
+  color: #888; 
+  cursor: pointer;
+  padding: 5px;
+  line-height: 1;
+  transition: color 0.3s ease;
+}
+
+.closeButton:hover {
+  color: var(--text-color);
+}
+
+.modalContent h2 {
+  font-size: 2.5rem; 
+  margin-bottom: 18px;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.modalContent p {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 35px; 
+}
+
+.signupForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px; 
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.formGroup label {
+  font-weight: 600; 
+  margin-bottom: 10px; 
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="email"] {
+  padding: 14px; 
+  border: 1px solid #ddd;
+  border-radius: 8px; 
+  font-size: 1rem;
+  width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formGroup input[type="text"]:focus,
+.formGroup input[type="email"]:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(92, 39, 199, 0.2); 
+}
+
+.formGroup input::placeholder {
+  color: #aaa;
+}
+
+.radioGroup {
+  display: flex;
+  gap: 25px; 
+  margin-top: 5px;
+  align-items: center; 
+}
+
+.radioGroup label {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  cursor: pointer;
+  font-size: 1rem; 
+}
+
+.radioGroup input[type="radio"] {
+  margin-right: 10px;
+  width: 18px; 
+  height: 18px;
+  accent-color: var(--primary-color);
+}
+
+.termsCheckbox {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 15px; 
+}
+
+.termsCheckbox input[type="checkbox"] {
+  margin-right: 12px; 
+  accent-color: var(--primary-color);
+  width: 20px; 
+  height: 20px;
+  flex-shrink: 0; 
+}
+
+.termsCheckbox label {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  line-height: 1.5; 
+  text-align: left;
+}
+
+.submitButton {
+  grid-column: 1 / -1;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 18px 35px; 
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-top: 30px; 
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(92, 39, 199, 0.3);
+}
+
+.submitButton:hover {
+  background-color: #f92549;
+  transform: translateY(-3px);
+  box-shadow: #f92549;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 576px) {
+  .modalContent {
+    padding: 30px;
+  }
+  .modalContent h2 {
+    font-size: 2rem;
+  }
+  .signupForm {
+    grid-template-columns: 1fr; 
+  }
+  .radioGroup {
+    flex-wrap: wrap;
+    gap: 15px; 
+  }
+  .termsCheckbox {
+    align-items: center; 
+  }
+  .submitButton {
+    width: 90%; 
+  }
+}

@@ -1,0 +1,186 @@
+.hero {
+  background-color: #F8F8F8; 
+  padding: 100px 0; 
+  text-align: left; 
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  flex-wrap: wrap;
+}
+
+.heroContent {
+  flex: 1;
+  min-width: 450px; 
+  padding-right: 60px; 
+  text-align: left;
+}
+
+.heroContent h1 {
+  font-size: 3.8rem; 
+  font-weight: 800; 
+  color: #000; 
+  margin-bottom: 25px; 
+  line-height: 1.15; 
+}
+
+.heroContent p {
+  font-size: 1.2rem; 
+  color: #555; 
+  margin-bottom: 40px; 
+  line-height: 1.7;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 25px; 
+  justify-content: center; 
+}
+
+.getStartedBtn {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 18px 40px;
+  font-size: 1.15rem; 
+  font-weight: 600;
+  border-radius: 50px; 
+  box-shadow: 0 8px 20px rgba(92, 39, 199, 0.3); 
+}
+
+.getStartedBtn:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  transform: translateY(-3px); 
+  box-shadow: 0 12px 25px rgba(92, 39, 199, 0.4);
+}
+
+.learnMoreBtn {
+  background-color: var(--white);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 18px 40px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+.learnMoreBtn:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(92, 39, 199, 0.2); 
+}
+
+.heroImageContainer {
+  flex: 1;
+  min-width: 400px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.heroImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); 
+  filter: saturate(1.1); 
+}
+
+.logoStripImage{
+  padding-top: 20px;
+}
+
+@media (max-width: 992px) {
+  .hero {
+    padding: 80px 0;
+  }
+  .heroContent {
+    padding-right: 0;
+    text-align: center; 
+    margin-bottom: 50px;
+    min-width: unset;
+  }
+  .heroImageContainer {
+    order: 0;
+    margin-bottom: 0;
+    min-width: unset;
+  }
+  .heroContent h1 {
+    font-size: 3rem;
+  }
+  .heroButtons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 0;
+  }
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+  .heroContent p {
+    font-size: 1.05rem;
+  }
+  .getStartedBtn, .learnMoreBtn {
+    padding: 15px 30px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .heroButtons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .getStartedBtn, .learnMoreBtn {
+    width: 90%; 
+    max-width: 350px;
+  }
+}
+
+.secondaryImageSection {
+  padding-top: 40px; 
+  padding-bottom: 10px; 
+  text-align: center; 
+  background-color: #F8F8F8; 
+  gap: 40px;
+}
+
+.secondaryHeroImage {
+  max-width: 100%; 
+  height: auto; 
+  border-radius: var(--border-radius); 
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); 
+  display: block; 
+  margin: 0 auto; 
+  max-width: 1170px; 
+}
+
+
+.logoStripImage {
+  max-width: 900px;
+  height: auto; 
+  display: block;
+  margin: 0 auto;
+  opacity: 0.8; 
+}
+
+@media (max-width: 768px) {
+  .secondaryImageSection {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+
+  .logoStripImage {
+    max-width: 90%; 
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+}
+
