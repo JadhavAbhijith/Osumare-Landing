@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/%7BOsumare-Landing%7D/static/css/main.a02ca095.css",
+    "main.js": "/%7BOsumare-Landing%7D/static/js/main.83e3ce05.js",
+    "static/media/Header.png": "/%7BOsumare-Landing%7D/static/media/Header.1a985b660ea23ad0ce4b.png",
+    "static/media/Customer Test2.png": "/%7BOsumare-Landing%7D/static/media/Customer Test2.f5d85d41dda39b2ac0d4.png",
+    "static/media/Customer Test.png": "/%7BOsumare-Landing%7D/static/media/Customer Test.9446dde619d047df7d96.png",
+    "static/media/Logo Strip.png": "/%7BOsumare-Landing%7D/static/media/Logo Strip.7e7b5b78a7254808329e.png",
+    "static/media/Group 24.png": "/%7BOsumare-Landing%7D/static/media/Group 24.a74027125249465460be.png",
+    "static/media/Group 25.png": "/%7BOsumare-Landing%7D/static/media/Group 25.b6b907ff1ce6afd8ab8d.png",
+    "static/media/Group 26.png": "/%7BOsumare-Landing%7D/static/media/Group 26.2c9059a16507b9805929.png",
+    "static/media/Group 23.png": "/%7BOsumare-Landing%7D/static/media/Group 23.12b100dc238af863215a.png",
+    "index.html": "/%7BOsumare-Landing%7D/index.html",
+    "main.a02ca095.css.map": "/%7BOsumare-Landing%7D/static/css/main.a02ca095.css.map",
+    "main.83e3ce05.js.map": "/%7BOsumare-Landing%7D/static/js/main.83e3ce05.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a02ca095.css",
+    "static/js/main.83e3ce05.js"
+  ]
+}
