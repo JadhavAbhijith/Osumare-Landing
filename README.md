@@ -1,6 +1,6 @@
-# Osumare Front-End Assignment – Landing Page
+# Osumare – Landing Page
 
-A responsive React-based landing page developed as part of the Osumare front-end assignment.
+A responsive React-based internal landing page.
 
 ---
 ## Live Demo
